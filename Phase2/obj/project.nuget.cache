@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "f6cBF9TAPY8PvV0zauzM1wVArmCRF64bmQSUWpptvPHyMC4ld1N5KEw0XNZ3C0X/jMprk8vq+64KLSYlsTy49Q==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Lenovo\\Downloads\\TLA\\TLA\\Phase2\\console.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to find project information for 'C:\\Users\\Lenovo\\Downloads\\TLA\\TLA\\TLA-LIB\\TLA-LIB.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
+      "libraryId": "C:\\Users\\Lenovo\\Downloads\\TLA\\TLA\\TLA-LIB\\TLA-LIB.csproj",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
