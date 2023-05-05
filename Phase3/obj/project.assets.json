@@ -1,0 +1,89 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "TLA-LIB/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/TLA-LIB.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TLA-LIB.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TLA-LIB/1.0.0": {
+      "type": "project",
+      "path": "../TLA-LIB/TLA-LIB.csproj",
+      "msbuildProject": "../TLA-LIB/TLA-LIB.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "TLA-LIB >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Asus\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "e:\\TLA\\TLA_Project_Midterm\\Phase3\\console.csproj",
+      "projectName": "console",
+      "projectPath": "e:\\TLA\\TLA_Project_Midterm\\Phase3\\console.csproj",
+      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+      "outputPath": "e:\\TLA\\TLA_Project_Midterm\\Phase3\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "e:\\TLA\\TLA_Project_Midterm\\TLA-LIB\\TLA-LIB.csproj": {
+              "projectPath": "e:\\TLA\\TLA_Project_Midterm\\TLA-LIB\\TLA-LIB.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
