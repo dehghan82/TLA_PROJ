@@ -1,40 +1,52 @@
 ﻿{
-  "states": "{'q0','q1q3','q2q4','q2q3','q3','q4','q2','TRAP'}",
-  "input_symbols": "{'a','b'}",
+  "states": "{'q0','q1','q2','q1q3','q2q4','q1q3q5','q1q2q3q4q6','q1q3q5q6','q2q4q6','q6','TRAP'}",
+  "input_symbols": "{'0','1'}",
   "transitions": {
     "q0": {
-      "a": "q1q3",
-      "b": "TRAP"
+      "0": "q1",
+      "1": "q1"
     },
-    "q1q3": {
-      "a": "TRAP",
-      "b": "q2q4"
-    },
-    "q2q4": {
-      "a": "q2q3",
-      "b": "TRAP"
-    },
-    "q2q3": {
-      "a": "q3",
-      "b": "q4"
-    },
-    "q3": {
-      "a": "TRAP",
-      "b": "q4"
-    },
-    "q4": {
-      "a": "q2",
-      "b": "TRAP"
+    "q1": {
+      "0": "TRAP",
+      "1": "q2"
     },
     "q2": {
-      "a": "q3",
-      "b": "TRAP"
+      "0": "q1q3",
+      "1": "TRAP"
+    },
+    "q1q3": {
+      "0": "TRAP",
+      "1": "q2q4"
+    },
+    "q2q4": {
+      "0": "q1q3q5",
+      "1": "TRAP"
+    },
+    "q1q3q5": {
+      "0": "TRAP",
+      "1": "q1q2q3q4q6"
+    },
+    "q1q2q3q4q6": {
+      "0": "q1q3q5q6",
+      "1": "q2q4q6"
+    },
+    "q1q3q5q6": {
+      "0": "q6",
+      "1": "q1q2q3q4q6"
+    },
+    "q2q4q6": {
+      "0": "q1q3q5q6",
+      "1": "q6"
+    },
+    "q6": {
+      "0": "q6",
+      "1": "q6"
     },
     "TRAP": {
-      "a": "TRAP",
-      "b": "TRAP"
+      "0": "TRAP",
+      "1": "TRAP"
     }
   },
   "initial_state": "q0",
-  "final_states": "{'q1q3','q2q3','q3'}"
+  "final_states": "{'q1q2q3q4q6','q1q3q5q6','q2q4q6','q6'}"
 }
