@@ -12,7 +12,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        var d = File.ReadAllText(@"E:\TLA\Results\phase1-sample\in\input2.json");
+        var d = File.ReadAllText(@"..\Results\phase1-sample\in\input2.json");
         var fa_in = JsonSerializer.Deserialize<FA>(d);
         IAutomata q = fa_in.set();
         NFA nfa = q.to_NFA();
@@ -20,7 +20,7 @@ class Program
         FA fa_out= dfa.SetR();
         string jason = JsonSerializer.Serialize(fa_out,new JsonSerializerOptions {WriteIndented = true});
         jason = Regex.Unescape(jason);
-        File.WriteAllText(@"E:\TLA\Results\phase1-sample\out\RFA.json",jason,Encoding.UTF8);   
+        File.WriteAllText(@"..\Results\phase1-sample\out\RFA2.json",jason,Encoding.UTF8);   
     }
     
     static public DFA NFA_TO_DFA(NFA nfa)
